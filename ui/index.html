@@ -1,0 +1,58 @@
+<!-- Inicio de formulario -->
+
+<div id="app">
+
+    <h2>Hola maldito</h2>
+
+    <input type="text" id="newNotes"/> &nbsp; <!-- Campo para insertar texto para ser guardado en la base de datos -->
+    <button @click="addNewNotes()">add note</button> <!-- Agregar la informacion del campo en la base de datos -->
+
+    <p v-for="note in notes">
+        <b>* {{ note.description}}</b> &nbsp; <!-- nombre o descripcion del equipo -->
+        <button @click="deleteNotes(note.id)">delete</button><!-- Borrar de la lista -->
+    </p>
+</div>
+
+<!-- Conexion a la API por cdn de axios-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js" integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<!-- Script generador del code. Refrescar la tabla, Añadir, Eliminar de la tabla -->
+<script type="module">
+  import { createApp, ref } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+  const API_URL="http://localhost:5038/"
+
+  createApp({
+    data() {
+      return {
+        title:"App",
+        notes:[]
+      }
+    },methods:{
+        async refreshData(){
+            axios.get(API_URL+"api/baer-db/GetNotes").then(
+                (response) => {
+                    this.notes=response.data;
+            })
+        },
+        async addNewNotes(){
+            var newNotes=document.getElementById("newNotes").value;
+            const formData=new FormData();
+            formData.append("newNotes", newNotes);
+
+            axios.post(API_URL+"api/baer-db/AddNotes", formData).then((response) => {
+                this.refreshData();
+                alert(response.data);
+            })
+        },
+        async deleteNotes(id){
+            axios.delete(API_URL+"api/baer-db/DeleteNotes?id="+id).then((response) => {
+                this.refreshData();
+                alert(response.data);   
+            })
+        }
+    },mounted:function(){ // <-- funcion generativa
+        this.refreshData();
+    }
+  }).mount('#app')
+</script>

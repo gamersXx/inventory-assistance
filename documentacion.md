@@ -1,0 +1,21 @@
+## PROYECTO DE PASANTIAS
+
+## Install tu project
+Clona el repo de github con la terminal
+
+```bash
+git clone https://github.com/MarlonDevs/inventory-assistance
+```
+
+Iniciar el projecto
+```bash
+cd /nombreDelProyecto
+```
+
+Inicia el proyecto con vscode, y luego ejecuta el proyecto para revisar que si funciona la base de datos
+```bash
+node index.js     #index.js es el nombre del archivo
+```
+
+## Video Tutorial to project
+https://www.youtube.com/watch?v=HkIGAqAP1GY

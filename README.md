@@ -1,4 +1,6 @@
 ## PROYECTO DE PASANTIAS
+![image](https://github.com/MarlonDevs/inventory-assistance/assets/99307306/de04ea1b-f057-477a-b386-708cbf08d1d3)
+
 
 ## Install tu project
 Clona el repo de github con la terminal

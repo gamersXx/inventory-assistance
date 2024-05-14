@@ -1,5 +1,6 @@
 ## INTERNSHIP PROJECT
-![image](https://github.com/MarlonDevs/inventory-assistance/assets/99307306/de04ea1b-f057-477a-b386-708cbf08d1d3)
+![image](https://github.com/MarlonDevs/inventory-assistance/assets/99307306/5e507f56-c221-427e-ac37-16bca054ea71)
+
 
 ## Install the project
 Clone github repo

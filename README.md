@@ -1,29 +1,22 @@
-## PROYECTO DE PASANTIAS
+## INTERNSHIP PROJECT
 ![image](https://github.com/MarlonDevs/inventory-assistance/assets/99307306/de04ea1b-f057-477a-b386-708cbf08d1d3)
 
-
-## Install tu project
-Clona el repo de github con la terminal
-
+## Install the project
+Clone github repo
 ```bash
 git clone https://github.com/MarlonDevs/inventory-assistance
 ```
-
-Iniciar el projecto
+Access folder path
 ```bash
 cd /nombreDelProyecto
 ```
-
-Inicia el proyecto con vscode, y luego ejecuta el proyecto para revisar que si funciona la base de datos
+Start the project with vscode, and then run the project to check if the database works
 ```bash
-node index.js     #index.js es el nombre del archivo
+node index    #index.js es el nombre del archivo de conexcion a la base de datos
 ```
 
-## Video Tutorial to project
-https://www.youtube.com/watch?v=HkIGAqAP1GY
-
 ## Continue design development
-Continuar con el desarrollo de la UI con Vite.js usando el framework de Vue.js, buscar componentes para simplificar la vida en flowbite.com
+Continue UI development with Vite.js using the Vue.js framework, find components to make your life easier at flowbite.com, coreui.io/vue/docs/components
 
 ## Call to API QR-CODE
 https://es.qr-code-generator.com

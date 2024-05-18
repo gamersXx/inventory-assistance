@@ -1,0 +1,21 @@
+.keys
+.env
+build
+package-lock.json
+.DS_Store
+
+node_modules/
+
+# local env files
+.env
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+
+# Editor directories and files
+.vscode
+
+# WLS temp files
+*:Zone.Identifier

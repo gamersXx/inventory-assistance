@@ -1,0 +1,7 @@
+[
+    {
+        "name": "dashboard",
+        "route": "dashboard",
+        "icon": "fa-home"
+    }
+]

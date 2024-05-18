@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"target": "es6",
+		"module": "commonjs",
+		"baseUrl": "server",
+		"paths": {
+			"@/*": ["./*"]
+		},
+		"outDir": "./build",
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"skipLibCheck": true /* Skip type checking all .d.ts files. */
+	},
+	"include": ["./server/**/*.ts", "./server/**/*.tsx"],
+	"exclude": ["node_modules", "build", "server/seeders"]
+}

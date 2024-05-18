@@ -1,0 +1,110 @@
+.dark ul > li > .side-menu.active:before {
+	background-image: url('../../corner-dark.svg');
+}
+.dark .side-nav > ul > li > .side-menu.active:after {
+	background-image: url('../../corner-dark.svg');
+}
+ul > li > .side-menu.active:before {
+	content: '';
+	width: 30px;
+	height: 30px;
+	margin-top: -30px;
+	transform: rotate(90deg) scale(1.04);
+	background-size: 100%;
+	background-image: url('../../corner.svg');
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	margin-right: -1.25rem;
+}
+.side-nav > ul > li > .side-menu.active:after {
+	content: '';
+	width: 30px;
+	height: 30px;
+	margin-top: 50px;
+	transform: scale(1.04);
+	background-size: 100%;
+	background-image: url('../../corner.svg');
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	margin-right: -1.25rem;
+}
+
+.side-nav .side-menu {
+	height: 50px;
+	position: relative;
+	margin-bottom: 0.25rem;
+	display: flex;
+	align-items: center;
+	border-radius: 9999px;
+	padding-left: 1.25rem;
+}
+
+.side-nav {
+	width: 230px;
+	overflow-x: hidden;
+	padding-right: 1.25rem;
+	padding-bottom: 4rem;
+}
+
+.side-nav > ul > li > .side-menu {
+	position: relative;
+	background-size: 100%;
+}
+.dark .side-nav > ul > li > .side-menu.active {
+	background: theme('colors.darkmode.700');
+	color: theme('colors.slate.100');
+}
+
+.side-nav > ul > li > .side-menu.active {
+	background: theme('colors.slate.100');
+	color: theme('colors.slate.500');
+}
+
+.side-nav > ul > li > div > .side-menu {
+	height: 50px;
+	position: relative;
+	margin-bottom: 0.25rem;
+	display: flex;
+	align-items: center;
+	border-radius: 0;
+	padding-left: 1.25rem;
+}
+
+.dark .side-nav > ul > li > div > .side-menu.active {
+	background: inherit;
+	color: theme('colors.slate.100');
+}
+.side-nav > ul > li > div > .side-menu.active {
+	background: theme('colors.slate.100');
+	color: theme('colors.slate.500');
+}
+
+.side-nav > ul > li > .side-menu .side-menu__icon:before {
+	content: '';
+	z-index: -1;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	margin-right: -1.25rem;
+	height: 100%;
+	width: 3rem;
+}
+
+.dark .side-nav > ul > li > .side-menu.active .side-menu__icon:before {
+	background-color: theme('colors.darkmode.700');
+}
+.side-nav > ul > li > .side-menu.active .side-menu__icon:before {
+	background-color: theme('colors.slate.100');
+}
+
+.side-menu__icon {
+	fill: theme('colors.slate.200');
+}
+.side-menu.active .side-menu__icon {
+	fill: theme('colors.primary.DEFAULT');
+}
+.dark .side-menu.active .side-menu__icon {
+	fill: theme('colors.white');
+}
